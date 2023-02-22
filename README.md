@@ -19,11 +19,14 @@ Your app will be available at http://localhost:8080/OntoSimMat
 
 # Example of use:
 - Choose two URIs from RDF Ontologies and/or Datasets that you want to match and click on Submit button.
-![image](https://user-images.githubusercontent.com/9248325/220658283-b3a6c244-1713-44c9-9dd2-f56fd37198fc.png)
--- Exact Matches will give you all properties and classes which are EXACT the same in both Ontology/Datasets. As following picture illustrates.
+![image](https://user-images.githubusercontent.com/9248325/220661737-71fc47f3-2965-4fa5-b8da-4eb608fbb823.png)
+
+## Exact Matches 
+Exact Matches gives you all properties and classes which are EXACT the same in both Ontology/Datasets. As following picture illustrates.
 ![image](https://user-images.githubusercontent.com/9248325/220660020-a4240132-04be-4269-ba1a-082967216bd1.png)
 
--- Similar Matches return the properties and classes with certain level of similarity from 0.0 to 1.0. As following picture illustrates for a similiarity level of 0.8.
+## Similar Matches
+Similar Matches return the properties and classes with certain level of similarity from 0.0 to 1.0. As following picture illustrates for a similiarity level of 0.8.
 ![image](https://user-images.githubusercontent.com/9248325/220660472-30cddbff-6fad-4efe-a774-84fc27fef001.png)
 The similar matches should be verified/validated by a Domain expert.
 
@@ -49,7 +52,8 @@ such as:
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
 ```
 
-
+# As developer
+The repository is LITERALLY an eclipse IDE project ready to use. Ofc, you can use your prefered java IDE.
 
 Details about the implementation algorithm in this paper:
 https://www.semantic-web-journal.net/system/files/swj2457.pdf
