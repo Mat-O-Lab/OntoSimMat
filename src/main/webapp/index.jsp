@@ -13,7 +13,10 @@
 	<form action="SimilarityServlet">
 		<fieldset style="border: none">
 			<label for="fname">Datasets</label>
-			<textarea id="datasets" name="datasets" rows="4" cols="80">http://pt.dbpedia.org/sparql, https://dbpedia.org/sparql</textarea>
+			<textarea id="datasets" name="datasets" rows="4" cols="80">
+			https://github.com/Mat-O-Lab/OntoSimMat/raw/main/build/classes/com/relod/servlet/ontoConcreteSource.owl, 
+			https://github.com/Mat-O-Lab/OntoSimMat/raw/main/build/classes/com/relod/servlet/pmdco_core.ttl
+			</textarea>
 			<br/>
 			<input type="radio" id="exact" name="opt" value="exact"/> Exact Matches
 			<br/>
