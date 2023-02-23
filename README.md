@@ -1,6 +1,9 @@
 # OntoSimMat
 RDF Ontology and Dataset matching for Material Sciences domain
 
+![ontologyMatching](https://user-images.githubusercontent.com/9248325/221026245-85526659-4463-4934-aaa2-3d3a3d1741dd.png)
+
+
 Requirements:
 - Java JRE (> 1.8) and environment variables setup.
 - A servlet container, e.g, [Apache Tomcat®](https://tomcat.apache.org/)
