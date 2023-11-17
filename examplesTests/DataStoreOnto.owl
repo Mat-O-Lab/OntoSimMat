@@ -1,1 +1,175 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#"
+     xml:base="https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:DataStoreOnto="https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#">
+    <owl:Ontology rdf:about="https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#am_machine_id -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#am_machine_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#AM_machine"/>
+        <rdfs:range rdf:resource="https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#Build_cycle_set_up"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#am_machine_id -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#am_machine_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#AM_machine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#galvo_scan_head_model -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#galvo_scan_head_model">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#Exposure_unit_X"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#manufacterer_brand -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#manufacterer_brand">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#Info_AM_Machine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#model_type -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#model_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#Info_AM_Machine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#AM_machine -->
+
+    <owl:Class rdf:about="https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#AM_machine"/>
+    
+
+
+    <!-- https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#Build_cycle_set_up -->
+
+    <owl:Class rdf:about="https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#Build_cycle_set_up"/>
+    
+
+
+    <!-- https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#Exposure_unit_X -->
+
+    <owl:Class rdf:about="https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#Exposure_unit_X">
+        <rdfs:subClassOf rdf:resource="https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#AM_machine"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#Info_AM_Machine -->
+
+    <owl:Class rdf:about="https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#Info_AM_Machine">
+        <rdfs:subClassOf rdf:resource="https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#AM_machine"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#Info_Build_cycle_set_up -->
+
+    <owl:Class rdf:about="https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#Info_Build_cycle_set_up">
+        <rdfs:subClassOf rdf:resource="https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#Build_cycle_set_up"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#AM_machine_1 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#AM_machine_1">
+        <rdf:type rdf:resource="https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#AM_machine"/>
+        <model_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">modelType1</model_type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#AM_machine"/>
+            <rdf:Description rdf:about="https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#Build_cycle_set_up"/>
+            <rdf:Description rdf:about="https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#Exposure_unit_X"/>
+            <rdf:Description rdf:about="https://github.com/Mat-O-Lab/OntoSimMat/raw/main/examplesTests/DataStoreOnto.owl#Info_AM_Machine"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
