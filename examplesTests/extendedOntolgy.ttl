@@ -1,0 +1,190 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix ex: <http://example.org/concreteontology#>.
+@prefix pmdco: <https://w3id.org/pmd/co#>.
+
+# Classes
+ex:AlkaliActivatedConcreteMix a owl:Class ;
+    rdfs:label "Alkali Activated Concrete Mix" ;
+    rdfs:comment "A concrete mix that is activated using alkaline activators" ;
+    rdfs:subClassOf pmdco:Material .
+
+ex:FreshProperties a owl:Class ;
+    rdfs:label "Fresh Properties" ;
+    rdfs:comment "Properties of concrete mix when it is freshly prepared, such as setting time and workability" .
+
+ex:SettingTime a owl:Class ;
+    rdfs:label "Setting Time" ;
+    rdfs:comment "The time taken for the concrete mix to set and harden" ;
+    rdfs:subClassOf ex:FreshProperties .
+
+ex:Workability a owl:Class ;
+    rdfs:label "Workability" ;
+    rdfs:comment "The ease with which the concrete mix can be worked with and shaped" ;
+    rdfs:subClassOf ex:FreshProperties .
+
+ex:CompressiveStrength a owl:Class ;
+    rdfs:label "Compressive Strength" ;
+    rdfs:comment "The ability of the concrete mix to withstand compression forces" ;
+    rdfs:subClassOf pmdco:MechanicalProperty .
+
+ex:Curing a owl:Class ;
+    rdfs:label "Curing" ;
+    rdfs:comment "The process of allowing the concrete mix to harden and gain strength over time" ;
+    rdfs:subClassOf pmdco:Process .
+
+ex:SEM a owl:Class ;
+    rdfs:label "Scanning Electron Microscopy" ;
+    rdfs:comment "A technique used to study the morphology of materials at a microscopic level" ;
+    rdfs:subClassOf pmdco:AnalysisProcess .
+
+ex:XRD a owl:Class ;
+    rdfs:label "X-Ray Diffraction" ;
+    rdfs:comment "A technique used to study the mineral composition of materials" ;
+    rdfs:subClassOf pmdco:AnalysisProcess .
+
+ex:FTIR a owl:Class ;
+    rdfs:label "Fourier Transform Infrared Spectroscopy" ;
+    rdfs:comment "A technique used to identify functional groups in materials" ;
+    rdfs:subClassOf pmdco:AnalysisProcess .
+
+ex:BinderContent a owl:Class ;
+    rdfs:label "Binder Content" ;
+    rdfs:comment "The amount of binder material in the concrete mix" ;
+    rdfs:subClassOf pmdco:MaterialComposition .
+
+ex:AlkalineActivators a owl:Class ;
+    rdfs:label "Alkaline Activators" ;
+    rdfs:comment "Chemicals used to activate the concrete mix and enhance its properties" ;
+    rdfs:subClassOf pmdco:ChemicalSubstance .
+
+ex:WaterToSolidsRatio a owl:Class ;
+    rdfs:label "Water to Solids Ratio" ;
+    rdfs:comment "The ratio of water to solid materials in the concrete mix" ;
+    rdfs:subClassOf pmdco:MaterialProperty .
+
+ex:AACContent a owl:Class ;
+    rdfs:label "Alkaline Activator Content" ;
+    rdfs:comment "The amount of alkaline activator used in the concrete mix" ;
+    rdfs:subClassOf pmdco:MaterialComposition .
+
+ex:GeopolymerConcrete a owl:Class ;
+    rdfs:label "Geopolymer Concrete" ;
+    rdfs:comment "A type of concrete made using geopolymers as a binder" ;
+    rdfs:subClassOf ex:AlkaliActivatedConcreteMix .
+
+ex:AggregateSize a owl:Class ;
+    rdfs:label "Aggregate Size" ;
+    rdfs:comment "The size of the aggregate particles used in the concrete mix" ;
+    rdfs:subClassOf pmdco:MaterialProperty .
+
+ex:ASTM a owl:Class ;
+    rdfs:label "ASTM" ;
+    rdfs:comment "American Society for Testing and Materials, a standards organization" ;
+    rdfs:subClassOf pmdco:Standard .
+
+ex:FlyAsh a owl:Class ;
+    rdfs:label "Fly Ash" ;
+    rdfs:comment "A byproduct of coal combustion used as a supplementary cementitious material" ;
+    rdfs:subClassOf pmdco:Material .
+
+ex:GGBS a owl:Class ;
+    rdfs:label "Ground Granulated Blast Furnace Slag" ;
+    rdfs:comment "A byproduct of iron production used as a supplementary cementitious material" ;
+    rdfs:subClassOf pmdco:Material .
+
+ex:MicrostructuralCharacterization a owl:Class ;
+    rdfs:label "Microstructural Characterization" ;
+    rdfs:comment "Studying the structure of materials at a microscopic level" ;
+    rdfs:subClassOf pmdco:AnalysisProcess .
+
+ex:AcidResistance a owl:Class ;
+    rdfs:label "Acid Resistance" ;
+    rdfs:comment "The ability of the concrete mix to resist damage from acidic substances" ;
+    rdfs:subClassOf pmdco:ChemicalProperty .
+
+ex:PC a owl:Class ;
+    rdfs:label "Portland Cement" ;
+    rdfs:comment "A common type of cement used in concrete mixes" ;
+    rdfs:subClassOf ex:BinderContent .
+
+ex:EquivalentMortar a owl:Class ;
+    rdfs:label "Equivalent Mortar" ;
+    rdfs:comment "A mortar mix that has the same composition as the concrete mix for testing purposes" ;
+    rdfs:subClassOf pmdco:Material .
+
+ex:PhysicalTests a owl:Class ;
+    rdfs:label "Physical Tests" ;
+    rdfs:comment "Tests conducted on the physical properties of the concrete mix" ;
+    rdfs:subClassOf pmdco:Test .
+
+ex:MicrostructuralTests a owl:Class ;
+    rdfs:label "Microstructural Tests" ;
+    rdfs:comment "Tests conducted on the microscopic structure of the concrete mix" ;
+    rdfs:subClassOf pmdco:Test .
+
+# Object Properties
+ex:hasSettingTime a owl:ObjectProperty ;
+    rdfs:domain ex:FreshProperties ;
+    rdfs:range ex:SettingTime ;
+    rdfs:label "has Setting Time" .
+
+ex:hasWorkability a owl:ObjectProperty ;
+    rdfs:domain ex:FreshProperties ;
+    rdfs:range ex:Workability ;
+    rdfs:label "has Workability" .
+
+ex:usesAlkalineActivator a owl:ObjectProperty ;
+    rdfs:domain ex:AlkaliActivatedConcreteMix ;
+    rdfs:range ex:AlkalineActivators ;
+    rdfs:label "uses Alkaline Activator" .
+
+ex:hasCompressiveStrength a owl:ObjectProperty ;
+    rdfs:domain ex:AlkaliActivatedConcreteMix ;
+    rdfs:range ex:CompressiveStrength ;
+    rdfs:label "has Compressive Strength" .
+
+# Data Properties
+ex:settingTimeValue a owl:DatatypeProperty ;
+    rdfs:domain ex:SettingTime ;
+    rdfs:range xsd:duration ;
+    rdfs:label "setting time value" .
+
+ex:workabilityValue a owl:DatatypeProperty ;
+    rdfs:domain ex:Workability ;
+    rdfs:range xsd:string ;
+    rdfs:label "workability value" .
+
+ex:compressiveStrengthValue a owl:DatatypeProperty ;
+    rdfs:domain ex:CompressiveStrength ;
+    rdfs:range xsd:float ;
+    rdfs:label "compressive strength value" .
+
+ex:alkalineActivatorContentValue a owl:DatatypeProperty ;
+    rdfs:domain ex:AACContent ;
+    rdfs:range xsd:float ;
+    rdfs:label "alkaline activator content value" .
+
+ex:waterToSolidsRatioValue a owl:DatatypeProperty ;
+    rdfs:domain ex:WaterToSolidsRatio ;
+    rdfs:range xsd:float ;
+    rdfs:label "water to solids ratio value" .
+
+# Individuals
+ex:ConcreteMix1 a ex:AlkaliActivatedConcreteMix ;
+    rdfs:label "Concrete Mix 1" ;
+    ex:usesAlkalineActivator ex:ActivatorTypeA ;
+    ex:hasCompressiveStrength ex:Strength30MPa ;
+    ex:hasSettingTime ex:SettingTime5Hrs .
+
+ex:ActivatorTypeA a ex:AlkalineActivators ;
+    rdfs:label "Activator Type A" ;
+    ex:alkalineActivatorContentValue 0.1 .
+
+ex:Strength30MPa a ex:CompressiveStrength ;
+    rdfs:label "30 MPa Compressive Strength" ;
+    ex:compressiveStrengthValue 30.0 .
+
+ex:SettingTime5Hrs a ex:SettingTime .
